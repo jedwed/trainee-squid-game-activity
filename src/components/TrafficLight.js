@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import Circle from "./Circle";
 
 const trafficLightContainer = {
@@ -11,12 +12,28 @@ const trafficLightContainer = {
   justifyContent: "center",
 };
 
-function TrafficLight() {
+function TrafficLight({ lightInterval }) {
+  const [activeLight, setActiveLight] = useState("green");
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (activeLight === "red") {
+        setActiveLight("green");
+      } else if (activeLight === "green") {
+        setActiveLight("orange");
+      } else {
+        setActiveLight("red");
+      }
+    }, lightInterval);
+    return () => clearInterval(interval);
+  }, [activeLight]);
+  // const [redActive, setRedActive] = useState(false);
+  // const [orangeActive, setOrangeActive] = useState(false);
+  // const [greenActive, setGreenActive] = useState(true);
   return (
     <div style={trafficLightContainer}>
-      <Circle color="red" />
-      <Circle color="orange" />
-      <Circle color="green" />
+      <Circle color="red" active={activeLight === "red"} />
+      <Circle color="orange" active={activeLight === "orange"} />
+      <Circle color="green" active={activeLight === "green"} />
     </div>
   );
 }

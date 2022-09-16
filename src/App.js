@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import TrafficLight from "./components/TrafficLight";
+import IntervalForm from "./components/IntervalForm";
 
 function App() {
   // A state to store the colour of the light
@@ -14,8 +15,14 @@ function App() {
   // const changeLight = () => {
   //   setIsRedLight(!isRedLight);
   // };
+  const [lightInterval, setLightInterval] = useState(5000);
 
-  return <TrafficLight />;
+  return (
+    <>
+      <IntervalForm setLightInterval={setLightInterval} />
+      <TrafficLight lightInterval={lightInterval} />
+    </>
+  );
 }
 
 export default App;
