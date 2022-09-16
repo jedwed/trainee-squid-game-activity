@@ -12,28 +12,22 @@ const trafficLightContainer = {
   justifyContent: "center",
 };
 
+const lights = ["green", "orange", "red"];
+
 function TrafficLight({ lightInterval }) {
-  const [activeLight, setActiveLight] = useState("green");
+  const [activeLight, setActiveLight] = useState(0);
   useEffect(() => {
     const interval = setInterval(() => {
-      if (activeLight === "red") {
-        setActiveLight("green");
-      } else if (activeLight === "green") {
-        setActiveLight("orange");
-      } else {
-        setActiveLight("red");
-      }
-    }, lightInterval);
+      setActiveLight((prev) => (prev + 1) % 3);
+    }, lightInterval * 1000);
     return () => clearInterval(interval);
-  }, [activeLight]);
-  // const [redActive, setRedActive] = useState(false);
-  // const [orangeActive, setOrangeActive] = useState(false);
-  // const [greenActive, setGreenActive] = useState(true);
+  }, [lightInterval]);
+
   return (
     <div style={trafficLightContainer}>
-      <Circle color="red" active={activeLight === "red"} />
-      <Circle color="orange" active={activeLight === "orange"} />
-      <Circle color="green" active={activeLight === "green"} />
+      <Circle color="red" active={lights[activeLight] === "red"} />
+      <Circle color="orange" active={lights[activeLight] === "orange"} />
+      <Circle color="green" active={lights[activeLight] === "green"} />
     </div>
   );
 }

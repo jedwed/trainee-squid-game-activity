@@ -5,7 +5,6 @@ function Circle({ color, active }) {
     height: 100,
     backgroundColor: active ? color : "black",
   };
-  console.log(circleStyle);
 
   return <div style={circleStyle} />;
 }

@@ -15,7 +15,8 @@ function App() {
   // const changeLight = () => {
   //   setIsRedLight(!isRedLight);
   // };
-  const [lightInterval, setLightInterval] = useState(5000);
+  // Interval between changing lights in seconds
+  const [lightInterval, setLightInterval] = useState(1);
 
   return (
     <>
