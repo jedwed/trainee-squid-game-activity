@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 function IntervalForm({ setLightInterval }) {
-  const [timeInput, setTimeInput] = useState(0);
+  const [timeInput, setTimeInput] = useState(1);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -13,6 +13,7 @@ function IntervalForm({ setLightInterval }) {
       <form onSubmit={handleSubmit}>
         <input
           type="number"
+          min={1}
           value={timeInput}
           onChange={(e) => setTimeInput(e.target.value)}
         />
