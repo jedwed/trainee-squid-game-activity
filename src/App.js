@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState, useEffect } from "react";
 
 function App() {
+  // A state to store the colour of the light
+  const [isRedLight, setIsRedLight] = useState(false);
+
+  document.body.style.backgroundColor = isRedLight ? "red" : "green";
+  // // A useEffect that constantly listens for changes to isRedLight
+  // useEffect(() => {
+  //   document.body.style.backgroundColor = isRedLight ? "red" : "green";
+  // }, [isRedLight]);
+
+  const changeLight = () => {
+    setIsRedLight(!isRedLight);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <button onClick={changeLight}>Change light</button>
     </div>
   );
 }
