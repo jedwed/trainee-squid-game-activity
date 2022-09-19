@@ -1,6 +1,10 @@
 import { useState } from "react";
 
+/**
+ * A form to set the time interval between light switches
+ */
 function IntervalForm({ setLightInterval }) {
+  // TODO: Make the form change the time interval when button is clicked
   return (
     <>
       <form>

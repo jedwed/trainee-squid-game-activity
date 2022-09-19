@@ -12,8 +12,12 @@ const trafficLightContainer = {
   justifyContent: "center",
 };
 
+// The colors of a traffic light
 const lights = ["green", "orange", "red"];
 
+/**
+ * The traffic light component consisting of three colored circles
+ */
 function TrafficLight({ lightInterval }) {
   const [activeLight, setActiveLight] = useState(0);
   return (

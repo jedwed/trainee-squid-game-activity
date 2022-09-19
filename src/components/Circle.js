@@ -1,3 +1,8 @@
+/**
+ * The circle for the traffic light
+ * It is given a color prop, and an active prop
+ * If 'active' is true, display the color, otherwise, display black
+ */
 function Circle({ color, active }) {
   const circleStyle = {
     borderRadius: "50%",
