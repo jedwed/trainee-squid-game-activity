@@ -3,19 +3,7 @@ import TrafficLight from "./components/TrafficLight";
 import IntervalForm from "./components/IntervalForm";
 
 function App() {
-  // A state to store the colour of the light
-  // const [isRedLight, setIsRedLight] = useState(false);
-
-  // document.body.style.backgroundColor = isRedLight ? "red" : "green";
-  // // A useEffect that constantly listens for changes to isRedLight
-  // useEffect(() => {
-  //   document.body.style.backgroundColor = isRedLight ? "red" : "green";
-  // }, [isRedLight]);
-
-  // const changeLight = () => {
-  //   setIsRedLight(!isRedLight);
-  // };
-  // Interval between changing lights in seconds
+  // The time interval for switching lights in seconds
   const [lightInterval, setLightInterval] = useState(1);
 
   return (

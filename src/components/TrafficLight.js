@@ -16,13 +16,6 @@ const lights = ["green", "orange", "red"];
 
 function TrafficLight({ lightInterval }) {
   const [activeLight, setActiveLight] = useState(0);
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setActiveLight((prev) => (prev + 1) % 3);
-    }, lightInterval * 1000);
-    return () => clearInterval(interval);
-  }, [lightInterval]);
-
   return (
     <div style={trafficLightContainer}>
       <Circle color="red" active={lights[activeLight] === "red"} />
