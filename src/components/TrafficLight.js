@@ -32,7 +32,7 @@ function TrafficLight() {
 
   // TODO TASK 2: Edit the form so that it lets you change the colors of the top traffic light.
 
-  // TODO BONUS TASK: Have the traffic lights automatically change every seconds.
+  // TODO BONUS TASK: Have the traffic lights automatically change every second.
 
   return (
     <div>
