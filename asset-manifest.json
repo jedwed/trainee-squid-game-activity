@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/trainee-squid-game-activity/static/css/main.93a0497a.css",
-    "main.js": "/trainee-squid-game-activity/static/js/main.94d8abcb.js",
+    "main.js": "/trainee-squid-game-activity/static/js/main.4c6487e5.js",
     "static/js/787.27aa59da.chunk.js": "/trainee-squid-game-activity/static/js/787.27aa59da.chunk.js",
     "index.html": "/trainee-squid-game-activity/index.html",
     "main.93a0497a.css.map": "/trainee-squid-game-activity/static/css/main.93a0497a.css.map",
-    "main.94d8abcb.js.map": "/trainee-squid-game-activity/static/js/main.94d8abcb.js.map",
+    "main.4c6487e5.js.map": "/trainee-squid-game-activity/static/js/main.4c6487e5.js.map",
     "787.27aa59da.chunk.js.map": "/trainee-squid-game-activity/static/js/787.27aa59da.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.93a0497a.css",
-    "static/js/main.94d8abcb.js"
+    "static/js/main.4c6487e5.js"
   ]
 }
