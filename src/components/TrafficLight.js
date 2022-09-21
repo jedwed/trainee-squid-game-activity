@@ -20,29 +20,50 @@ function TrafficLight() {
   // Top light is the same color as the first index of lights
   // Middle light is the same color as the second index of lights
   // Bottom light is the same color as the third index of lights
-  const [lights, setLights] = useState(["green", "orange", "red"]);
+  const [lights, setLights] = useState(["blue", "orange", "red"]);
 
   const [activeLight, setActiveLight] = useState(0);
-  // TODO TASK 1: Make the traffic lights switch between
-  // green, orange and red at the press of the Change lights button
-  // Do this by using setActiveLight
-  // If activeLight is 0, top light will turn on
-  // If activeLight is 1, middle light will turn on
-  // If activeLight is 2, bottom light will turn on
+  /*
+ ===========================================================================================
+  YOU WILL NOT NEED TO CREATE MORE COMPONENTS. 
+  ALL THE TASKS CAN BE DONE BY MANIPULATING THE ABOVE TWO STATES
+ ===========================================================================================
+  TASK 1:
+  Make the traffic lights switch between green->orange->red->green etc.
+  at the press of the Change lights button.
+  Do this by using setActiveLight.
 
-  // TODO TASK 2: Edit the form so that it lets you change the colors of the top traffic light.
+  YOU DO NOT NEED TO CREATE YOUR OWN TRAFFIC LIGHT.
+  ALL YOU HAVE TO DO IS EDIT THE activeLight STATE.
 
-  // TODO BONUS TASK: Have the traffic lights automatically change every second.
+  If activeLight is 0, top light will turn on.
+  If activeLight is 1, middle light will turn on.
+  If activeLight is 2, bottom light will turn on.
+ ===========================================================================================
+  TASK 2:
+  Edit the form so that it lets you change the colors of the top traffic light.
+  Assume that the user always enter valid colour names.
+  The colour of the traffic lights will automatically change depending on the lights state.
+ ===========================================================================================
+  BONUS TASK:
+  Have the traffic lights automatically change every second (in the same order as task one).
+ ===========================================================================================
+  */
+  
+  // You can write your own functions here
 
   return (
     <div>
       {/* TODO TASK 1 EDIT BELOW BUTTON */}
       <button>Change lights</button>
+
+      {/* TRAFFIC LIGHT DO NOT EDIT ANYTHING INSIDE BELOW DIV */}
       <div style={trafficLightContainer}>
         <Circle color={lights[0]} active={activeLight === 0} />
         <Circle color={lights[1]} active={activeLight === 1} />
         <Circle color={lights[2]} active={activeLight === 2} />
       </div>
+
       {/* TODO TASK 2 EDIT BELOW FORM */}
       <form>
         <input type="text" />
