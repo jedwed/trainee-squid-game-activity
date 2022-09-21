@@ -12,7 +12,6 @@ const trafficLightContainer = {
   justifyContent: "center",
 };
 
-
 /**
  * The traffic light component consisting of three colored circles
  */
@@ -35,18 +34,18 @@ function TrafficLight() {
 
   return (
     <div>
-    {/* TODO TASK 2 EDIT BELOW FORM */}
-    <form>
-      <input type="text"/>
-      <button>Change Top Colour</button>
-    </form>
-    <div style={trafficLightContainer}>
-      <Circle color={lights[0]} active={lights[activeLight] === lights[0]} />
-      <Circle color={lights[1]} active={lights[activeLight] === lights[1]} />
-      <Circle color={lights[2]} active={lights[activeLight] === lights[2]} />
-    </div>
-    {/* TODO TASK 1 EDIT BELOW BUTTON */}
-    <button>Change lights</button>
+      {/* TODO TASK 1 EDIT BELOW BUTTON */}
+      <button>Change lights</button>
+      <div style={trafficLightContainer}>
+        <Circle color={lights[0]} active={activeLight === 0} />
+        <Circle color={lights[1]} active={activeLight === 1} />
+        <Circle color={lights[2]} active={activeLight === 2} />
+      </div>
+      {/* TODO TASK 2 EDIT BELOW FORM */}
+      <form>
+        <input type="text" />
+        <button>Change Top Colour</button>
+      </form>
     </div>
   );
 }
