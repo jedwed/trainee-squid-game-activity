@@ -25,28 +25,27 @@ function TrafficLight() {
 
   const [activeLight, setActiveLight] = useState(0);
   // TODO TASK 1: Make the traffic lights switch between
-  // green, orange and red at the press of a button
+  // green, orange and red at the press of the changeLights button
   // Do this by using setActiveLight
+  // If activeLight is 0, top light will turn on
+  // If activeLight is 1, middle light will turn on
+  // If activeLight is 2, bottom light will turn on
 
-  // TODO TASK 2: Make a form that lets you change the colors of each traffic light
-  // NOTE: 
-  // Do this by using setLights
+  // TODO TASK 2: Make a form that lets you change the colors of the top traffic light
 
   return (
     <div>
+    {/* TODO TASK 2 EDIT BELOW FORM */}
     <form>
-      <input/>
+      <input type="text"/>
       <button>Change Top Colour</button>
-      <input type="text"/>
-      <button>Change Middle Colour</button>
-      <input type="text"/>
-      <button>Change Bottom Colour</button>
     </form>
     <div style={trafficLightContainer}>
       <Circle color={lights[0]} active={lights[activeLight] === lights[0]} />
       <Circle color={lights[1]} active={lights[activeLight] === lights[1]} />
       <Circle color={lights[2]} active={lights[activeLight] === lights[2]} />
     </div>
+    {/* TODO TASK 1 EDIT BELOW BUTTON */}
     <button>Change lights</button>
     </div>
   );
