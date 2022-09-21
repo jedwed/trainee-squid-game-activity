@@ -24,13 +24,15 @@ function TrafficLight() {
 
   const [activeLight, setActiveLight] = useState(0);
   // TODO TASK 1: Make the traffic lights switch between
-  // green, orange and red at the press of the changeLights button
+  // green, orange and red at the press of the Change lights button
   // Do this by using setActiveLight
   // If activeLight is 0, top light will turn on
   // If activeLight is 1, middle light will turn on
   // If activeLight is 2, bottom light will turn on
 
-  // TODO TASK 2: Make a form that lets you change the colors of the top traffic light
+  // TODO TASK 2: Edit the form so that it lets you change the colors of the top traffic light.
+
+  // TODO BONUS TASK: Have the traffic lights automatically change every seconds.
 
   return (
     <div>
