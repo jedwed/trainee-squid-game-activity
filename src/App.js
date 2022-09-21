@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <IntervalForm setLightInterval={setLightInterval} />
+      {/* <IntervalForm setLightInterval={setLightInterval} /> */}
       <TrafficLight lightInterval={lightInterval} />
     </>
   );

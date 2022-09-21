@@ -20,6 +20,9 @@ const lights = ["green", "orange", "red"];
  */
 function TrafficLight({ lightInterval }) {
   const [activeLight, setActiveLight] = useState(0);
+  // TODO: Make the traffic lights switch between
+  // green, orange and red at the given lightInterval (eg. lightInterval = 5000ms)
+  // HINT: Use JavaScript's useInterval function
   return (
     <div style={trafficLightContainer}>
       <Circle color="red" active={lights[activeLight] === "red"} />
