@@ -20,7 +20,7 @@ function TrafficLight() {
   // Top light is the same color as the first index of lights
   // Middle light is the same color as the second index of lights
   // Bottom light is the same color as the third index of lights
-  const [lights, setLights] = useState(["blue", "orange", "red"]);
+  const [lights, setLights] = useState(["green", "orange", "red"]);
 
   const [activeLight, setActiveLight] = useState(0);
   /*
@@ -49,7 +49,7 @@ function TrafficLight() {
   Have the traffic lights automatically change every second (in the same order as task one).
  ===========================================================================================
   */
-  
+
   // You can write your own functions here
 
   return (
