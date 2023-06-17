@@ -10,6 +10,6 @@ To run the project you can use the following command:
 
 Instructions are in src/components/TrafficLight.js
 
-### Implemented solution
+### Working solution
 
-To see the implemented solution checkout https://jedwed.github.io/trainee-squid-game-activity/
+To see what a working solution should look like checkout https://jedwed.github.io/trainee-squid-game-activity/
