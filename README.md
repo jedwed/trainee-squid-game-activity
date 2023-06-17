@@ -1,3 +1,5 @@
+Clone master and you can get started!
+
 ## Run
 
 Before starting the website, make sure you install all the packages by running the following command in the terminal:
