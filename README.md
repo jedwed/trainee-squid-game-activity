@@ -9,3 +9,7 @@ To run the project you can use the following command:
 ### `npm start`
 
 Instructions are in src/components/TrafficLight.js
+
+### Implemented solution
+
+To see the implemented solution checkout https://jedwed.github.io/trainee-squid-game-activity/
