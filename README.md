@@ -1,5 +1,7 @@
 Clone master and you can get started!
 
+Instructions are in src/components/TrafficLight.js
+
 ## Run
 
 Before starting the website, make sure you install all the packages by running the following command in the terminal:
