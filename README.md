@@ -15,3 +15,4 @@ Instructions are in src/components/TrafficLight.js
 ### Working solution
 
 To see what a working solution should look like checkout https://jedwed.github.io/trainee-squid-game-activity/
+(Note that the bonus task is not implemented)
